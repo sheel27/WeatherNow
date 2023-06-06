@@ -11,6 +11,20 @@ const Descriptions = ({ weather, units }) => {
 
   const cards = [
     {
+      id: 7,
+      icon: <FaSun />,
+      title: "sunrise",
+      data: weather.sunrise,
+      unit: "",
+    },
+    {
+      id: 8,
+      icon: <FaMoon />,
+      title: "sunset",
+      data: weather.sunset,
+      unit: "",
+    },
+    {
       id: 1,
       icon: <FaArrowDown />,
       title: "min",
@@ -51,20 +65,6 @@ const Descriptions = ({ weather, units }) => {
       title: "wind speed",
       data: weather.speed.toFixed(),
       unit: windUnit,
-    },
-    {
-      id: 7,
-      icon: <FaSun />,
-      title: "sunrise",
-      data: weather.sunrise,
-      unit: "",
-    },
-    {
-      id: 8,
-      icon: <FaMoon />,
-      title: "sunset",
-      data: weather.sunset,
-      unit: "",
     },
   ];
   return (
