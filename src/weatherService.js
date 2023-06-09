@@ -23,8 +23,8 @@ const getFormattedWeatherData = async (city, units = "metric") => {
 
       const { description, icon } = weather[0];
 
-      const sunriseTime = new Date(sunrise * 1000); // Convert UNIX timestamp to JavaScript Date object
-      const sunsetTime = new Date(sunset * 1000); // Convert UNIX timestamp to JavaScript Date object
+      const sunriseTime = new Date(sunrise * 1000); 
+      const sunsetTime = new Date(sunset * 1000); 
 
       return {
         description,
@@ -39,18 +39,17 @@ const getFormattedWeatherData = async (city, units = "metric") => {
         country,
         name,
 
-        sunrise: sunriseTime.toLocaleTimeString(), // Format sunrise time as a string
-        sunset: sunsetTime.toLocaleTimeString(), // Format sunset time as a string
+        sunrise: sunriseTime.toLocaleTimeString(), 
+        sunset: sunsetTime.toLocaleTimeString(), 
       };
   } else {
-  // Handle API errors
   console.error("API request failed:", data.message);
-  return null; // Return null when data is not available
+  return null; 
   }
   }   catch (error) {
 // Handle fetch errors
 console.error("Error fetching data:", error);
-return null; // Return null when data is not available
+return null; 
 }
 };
 
