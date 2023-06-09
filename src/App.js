@@ -15,7 +15,6 @@ function App() {
       const data = await getFormattedWeatherData(city, units);
       setWeather(data);
 
-      // dynamic bg
       const threshold = units === "metric" ? 20 : 60;
       if (data.temp <= threshold) setBg(coldBg);
       else setBg(hotBg);
@@ -68,7 +67,6 @@ function App() {
               </div>
             </div>
 
-            {/* bottom description */}
             <Descriptions weather={weather} units={units} />
           </div>
         )}
