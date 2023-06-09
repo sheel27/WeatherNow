@@ -23,7 +23,7 @@ const Descriptions = ({ weather, units }) => {
       title: "sunset",
       data: weather.sunset,
       unit: "",
-    },,
+    },
     {
       id: 1,
       icon: <FaArrowDown />,
