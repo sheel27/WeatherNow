@@ -36,8 +36,6 @@
   padding: 1rem;
 }
 
-/* Top  */
-
 .section {
   width: 100%;
   padding: 0.7rem;
@@ -59,10 +57,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 0.5rem;
-  font-size: 2rem; /* Adjust font size */
+  font-size: 2rem; 
   font-weight: 200;
-  width: 100%; /* Take up full width */
-  margin-right: 1rem; /* Add spacing */
+  width: 100%; 
+  margin-right: 1rem; 
 }
 
 .section__inputs > input:focus {
@@ -70,8 +68,8 @@
 }
 
 .section__inputs > button {
-  padding: 1rem 2rem; /* Adjust padding */
-  font-size: 2rem; /* Adjust font size */
+  padding: 1rem 2rem; 
+  font-size: 2rem; 
   font-weight: 500;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -92,29 +90,27 @@
 }
 
 .icon > h3 {
-  font-size: 1.5rem; /* Adjust font size */
+  font-size: 1.5rem; 
   font-weight: 200;
   text-transform: capitalize;
 }
 
 .temperature > h1 {
-  font-size: 4rem; /* Adjust font size */
+  font-size: 4rem;
 }
-
-/* Media Queries */
 
 @media (max-width: 768px) {
   .container {
-    padding: 0.5rem; /* Adjust padding */
+    padding: 0.5rem; 
   }
 
   .section__inputs {
-    flex-direction: column; /* Stack inputs vertically */
+    flex-direction: column; 
   }
 
   .section__inputs > input,
   .section__inputs > button {
-    margin-right: 0; /* Remove right margin for stacked inputs */
-    margin-bottom: 1rem; /* Add bottom margin for stacked inputs */
+    margin-right: 0; 
+    margin-bottom: 1rem; 
   }
 }
